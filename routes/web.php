@@ -14,3 +14,22 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->group(['prefix' => 'api'], function () use ($router) { //Grouping All Routes The Under API Prefix
+
+    /*************************** End of Hotel Searching ***************************/
+
+        $router->group(['prefix' => 'hotel'], function () use ($router) {
+            $router->get('myFollowingPosts', 'PostController@homePosts');
+
+            $router->post('/search', 'HotelController@search');
+            $router->get('/getUserData', 'OrganizationController@getUserData');
+            $router->get('/getUserDataByCode/{code}', 'OrganizationController@getUserDataByCode');
+
+        });
+
+    /*************************** End of Hotel Searching ***************************/
+
+
+
+
+});
