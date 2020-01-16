@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 interface HotelRepositoryInterface
 {
-    public function search();
+    public function searchForHotels(Request $request);
 
 
 }

@@ -2,18 +2,11 @@
 
 namespace App\Traits;
 
+//A Trait for handline API Responses
 trait ApiResponseTrait{
 
     public $paginateNumber = 10;
 
-    /* response figure
-     *
-     *[
-     *'data' =>
-     *'status' => true, false
-     *'error' => ''
-     *]
-     * */
 
     public function apiResponse($data = null, $error = null, $code = 200){
 

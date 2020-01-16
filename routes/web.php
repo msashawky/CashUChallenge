@@ -16,15 +16,15 @@ $router->get('/', function () use ($router) {
 });
 $router->group(['prefix' => 'api'], function () use ($router) { //Grouping All Routes The Under API Prefix
 
-    /*************************** End of Hotel Searching ***************************/
+    $router->get('/key', function () {//Generating App Key
+        return \Illuminate\Support\Str::random(32);
+    });
+    /*************************** Start of Hotel Searching ***************************/
 
         $router->group(['prefix' => 'hotel'], function () use ($router) {
-            $router->get('myFollowingPosts', 'PostController@homePosts');
-
             $router->post('/search', 'HotelController@search');
-            $router->get('/getUserData', 'OrganizationController@getUserData');
-            $router->get('/getUserDataByCode/{code}', 'OrganizationController@getUserDataByCode');
-
+            $router->post('/bestHotels', 'HotelController@bestHotels');
+            $router->post('/topHotels', 'HotelController@topHotels');
         });
 
     /*************************** End of Hotel Searching ***************************/
