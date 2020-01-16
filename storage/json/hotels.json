@@ -1,0 +1,41 @@
+{
+    "hotels": [
+        {
+            "provider" : "BestHotels",
+            "hotelName" : "Mariot",
+            "fare" : 200,
+            "amenities" : ["Satellite", "Wifi", "TV"],
+            "city" : "Cairo",
+            "hotelRate" : 5,
+            "discount" : "20%"
+        },
+        {
+            "provider" : "TopHotel",
+            "hotelName" : "Hilton",
+            "fare" : 400,
+            "amenities" : ["PlayStation","Satellite", "Wifi", "TV"],
+            "city" : "Cairo",
+            "hotelRate" : 3,
+            "discount" : "10%"
+        },
+        {
+            "provider" : "BestHotels",
+            "hotelName" : "Sheraton",
+            "fare" : 500,
+            "amenities" : ["Satellite","Xbox", "Wifi", "TV"],
+            "city" : "Giza",
+            "hotelRate" : 4,
+            "discount" : ""
+        },
+        {
+            "provider" : "TopHotel",
+            "hotelName" : "Dusit Thani",
+            "fare" : 500,
+            "amenities" : ["Satellite","Xbox", "Wifi", "TV"],
+            "city" : "Giza",
+            "hotelRate" : 4,
+            "discount" : ""
+        }
+    ]
+
+}
