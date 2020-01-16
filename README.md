@@ -8,7 +8,7 @@ Testing: unitPHP
 Content-type Format: application/JSON
 
 
-PostMan API (Web): https://web.postman.co/collections/1178660-694c7047-7e6d-41ed-9b01-e1ef5105eb52?version=latest&workspace=fc55f022-3db7-4358-83b9-31b8723a1d37
+PostMan API (Web): https://documenter.getpostman.com/view/1178660/SWLmXPqm
 
 
 
